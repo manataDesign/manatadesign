@@ -1,0 +1,29 @@
+@import "../setting/config";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: $txt-color;
+    letter-spacing: .2rem;
+    background-color: $bg-color;
+    font-family: $ff;
+    line-height: 1.68;
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    img , svg {
+        width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+}
