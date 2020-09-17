@@ -1,0 +1,13 @@
+$bg-color: #fff;
+$bg-color-secondary: #EEFBFB;
+$txt-color: #333;
+// $txt-color-secondary: ;
+$txt-color-accent: #3BA6C9;
+
+$ff: 'Noto Sans JP', sans-serif;
+// $ff-sedondary: ;
+// $ff-accent: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+
+$breakpoints: ('sm' : 'screen and (max-width: 580px)',
+    'md' : 'screen and (max-width: 960px)',
+);

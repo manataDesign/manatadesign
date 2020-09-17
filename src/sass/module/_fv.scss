@@ -1,0 +1,89 @@
+@import "../setting/config";
+
+.pc-br {
+    @include mq(sm) {
+        display: none;
+    }
+}
+
+
+.fv {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+
+    @include mq(sm)  {
+        width: 100%;
+        background-image: url("../../../img/fv-bg@2x.png");
+        background-size: cover;
+        background-position: center top -100px;
+        background-repeat: no-repeat;
+        padding: 50px 0 130px 0;
+    }
+
+    &-bg {
+        position: absolute;
+        top: -50%;
+        right: -5%;
+        z-index: -10;
+        img {
+            width: 130%;
+            @include mq(md) {
+                width: 100%;
+            }
+        }
+        @include mq(md) {
+            right: -40%;
+        }
+        @include mq(sm) {
+            display: none;
+        }
+    }
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0 30px;
+        @include mq(sm) {
+            flex-direction: column;
+        }
+    }
+
+    &-list__item {
+        @include mq(sm) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &-copy {
+        @include mq(md) {
+            max-width: 80%;
+        }
+        @include mq(sm) {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+    
+    &__ttl {
+        font-size: 3.2rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+        line-height: 1.7;
+    }
+
+    &__txt {
+        font-weight: bold;
+        margin-bottom: 30px;
+        font-size: 1.4rem;
+    }
+
+    .more {
+        @include mq(sm) {
+            margin: 0 auto;
+        }
+    }
+}
