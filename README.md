@@ -1,1 +1,1 @@
-# manatadesign
+# manata-design
